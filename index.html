@@ -4,9 +4,140 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
-    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="img/svg/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Мое Портфолио</h1>
+    <header>
+      <nav>
+        <ul class="portfolio-list">
+          <div class="container-h1-img">
+            <h1>Портфолио</h1>
+            <img class="icon" src="img/svg/resume.svg" alt="icon" />
+          </div>
+          <li>
+            <a href="#about">Обо мне</a>
+          </li>
+          <li>
+            <a href="#education">Образование</a>
+          </li>
+          <li>
+            <a href="#project">Проекты</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="about-section" id="about">
+        <h2>Обо мне</h2>
+        <div class="container-img">
+          <img class="img-me" src="img/me.jpg" alt="image" />
+        </div>
+        <p>
+          Привет, меня зовут Влад, я <em>Front-end разработчик</em>. Я ежедневно
+          развиваюсь в этом направлении и получаю от этого удовольствие. В такой
+          непростой задаче как <em> грамотная верстка</em> мне помогают такие
+          качества как скрупулезность, ответственность, внимание к деталям и
+          <strong>умение находить решения задач</strong>.
+        </p>
+      </section>
+      <br />
+      <section id="education">
+        <h2>Образование</h2>
+        <hr />
+        <ul>
+          <li>МТКП МГТУ им.Н.Э. Баумана</li>
+          <li>ГУУ</li>
+        </ul>
+        <h2>Навыки</h2>
+        <hr />
+        <ul>
+          <li>Английский</li>
+          <li>
+            <abbr title="Верстаем сайты">Отличные знания HTML5, CSS3</abbr>
+          </li>
+          <li><abbr title="Логика сайта">Базовые знания JavaScript</abbr></li>
+          <li>SCSS препроцессор</li>
+          <li><abbr title="Логика сайта">Vue</abbr></li>
+          <li><abbr title="Логика сайта">React</abbr></li>
+          <li><abbr title="Логика сайта">Vite</abbr></li>
+          <li>Docker</li>
+          <li>Адаптивная и кроссбраузерная верстка</li>
+        </ul>
+      </section>
+      <br />
+      <section id="project">
+        <h2>Проекты</h2>
+        <hr />
+        <article>
+          <h3>Портфолио</h3>
+          <details>
+            <summary>Подробнее о проекте</summary>
+            <a class="link-github" href="https://github.com/vladich21"
+              >Мой Github профиль</a
+            >
+          </details>
+        </article>
+      </section>
+      <br />
+      <section id="contacts">
+        <h2>Контакты</h2>
+        <hr />
+        <div class="address-display-flex">
+          <address>
+            <ol>
+              <li class="email">
+                <img width="50px" src="img/svg/email.svg" alt="email" />
+                <p class="address-p">Email:</p>
+                <a class="address" href="mailto:vladkoval039@gmail.com"
+                  >vladkoval039@gmail.com</a
+                >
+              </li>
+              <li class="phone">
+                <img width="50px" src="img/svg/phone.svg" alt="phone" />
+                <p class="address-p">Телефон:</p>
+                <a class="address" href="tel:+79688742121">+7968 874 21 21</a>
+              </li>
+              <li class="location">
+                <img width="50px" src="img/svg/address.svg" alt="address" />
+                <p class="location-p">Адрес:</p>
+                <p class="location">г. Москва, Россия</p>
+              </li>
+            </ol>
+          </address>
+          <div class="contact-form">
+            <form action="">
+              <div class="form-name">
+                <label>Имя:</label>
+                <input type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="form-email">
+                <label>E-mail:</label>
+                <input type="email" placeholder="Ваш email" />
+              </div>
+              <div class="form-message">
+                <label for="">Сообщение:</label>
+                <textarea placeholder="Ваше сообщение"></textarea>
+                <br />
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Влад</p>
+      <a href=""></a>
+    </footer>
   </body>
 </html>

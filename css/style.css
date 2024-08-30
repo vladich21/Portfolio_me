@@ -1,0 +1,182 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background-color: #1D203A;
+}
+#education{
+    padding: 0 40px;
+}
+.portfolio-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 40px;
+}
+.container-h1-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 14px;
+    color: white;
+    margin: 0 auto;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+}
+.name{
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 20px;
+}
+
+a{
+    color: white;
+    padding: 0;
+}
+a:hover{
+    opacity: 0.5;
+}
+.about-section{
+   background-color: #F1F1F1;
+   margin-top: 80px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+.img-me{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+p{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+ul li{
+    padding-bottom: 10px;
+}
+.link-github {
+    color: black;
+}
+#project{
+    padding: 0 40px;
+}
+h3{
+    margin-top: 60px;
+    font-size: 26px;
+}
+ol{
+    padding: 0;
+}
+#contacts{
+padding: 40px 60px 40px 40px;
+}
+.address{
+    color: blue;
+}
+.address-p {
+    text-align: left;
+}
+.email {
+    display: flex;
+    align-items: center;
+
+}
+.phone {
+    display: flex;
+    align-items: center;
+    
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.address-display-flex{
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+}
+form{
+    padding: 20px 30px 20px 0;
+}
+.contact-form input,textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    outline: 0;
+}
+
+.form-name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-message{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    color: #ffffff;
+    background-color: #1C213A;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+}
+footer{
+    background-color: #323232;
+    color: #F1F1F1;
+}
+@media (max-width: 500px) {
+    .portfolio-list{
+       justify-content: center;
+        display: flex;
+        gap: 15px;
+    }
+  }
+@media (max-width: 650px) {
+.address-display-flex{
+    justify-content: center;
+}
+}
+@media (max-width: 425px) {
+    .img-me{
+        width: 180px;
+        height: 150px;
+    }
+  }
